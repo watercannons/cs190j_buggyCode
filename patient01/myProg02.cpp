@@ -1,7 +1,5 @@
-// myProg02.cpp 
-// Author: Xingbu Qin
-// Calculates the number of entries in a txt file and
-// the number of lines that reads "duck"
+//Current Bug: The program counts 1 extra animals than there are present
+//Also, it's counting 1 less "duck" than there is
 
 #include <iostream> // for printf()
 #include <cstdlib> // for exit(), perror()
@@ -29,8 +27,6 @@ int main(int argc, char *argv[])
 	int notDuckCounter = 0;
 	string line = "";
 	
-	getline(animalsFile,line);
-	
 	while(animalsFile)
 	{
 		if(line == "duck")
@@ -44,7 +40,7 @@ int main(int argc, char *argv[])
 
 		getline(animalsFile,line);
 	}
-
+    
 	cout << "Report for " << argv[1] << ":" << endl;
 	cout << "   Animal count:    " << duckCounter + notDuckCounter << endl;
 	cout << "   Duck count:      " << duckCounter << endl;

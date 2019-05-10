@@ -1,3 +1,6 @@
+//This features a variety of problem, all with the isPrime function
+//Does not feature atrocious identing that's mostly not an issue anymore
+
 bool isOdd(int x) { 
 	return (x%2);
 }
@@ -6,15 +9,21 @@ bool isEven(int x)
 	return !(x%2);	
 }
 bool isPrime(int x) {
-	if(x <= 1)
-		return false;
+    bool primeNumber = false;
+	if(x == 0 || x == 1)
+		primeNumber = false;
 
-       for(int i = 2; i < x; i++)
-       {
-		if(x%i == 0)
+    int counter;
+
+    for(int i = 2; i < x; i++)
+    {
+        if(x%i == 0)
 		{
-			return false;
+			counter++;
 		}
-       }	       
-       return true;
+        
+        if(counter > 0)
+            primeNumber = false;
+    }	
+    return primeNumber;
 }
