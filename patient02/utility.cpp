@@ -1,4 +1,3 @@
-//This features a variety of problem, all with the isPrime function
 
 bool isOdd(int x) { 
 	return (x%2);
