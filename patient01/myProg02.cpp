@@ -1,6 +1,3 @@
-//Current Bug: The program counts 1 extra animals than there are present
-//Also, it's counting 1 less "duck" than there is
-
 #include <iostream> // for printf()
 #include <cstdlib> // for exit(), perror()
 #include <fstream> // for ifstream

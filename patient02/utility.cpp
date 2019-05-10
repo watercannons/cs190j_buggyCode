@@ -1,5 +1,4 @@
 //This features a variety of problem, all with the isPrime function
-//Does not feature atrocious identing that's mostly not an issue anymore
 
 bool isOdd(int x) { 
 	return (x%2);
